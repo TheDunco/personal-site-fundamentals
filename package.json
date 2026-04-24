@@ -1,0 +1,24 @@
+{
+  "name": "personal-site-fundamentals",
+  "version": "1.0.0",
+  "description": "A personal site focused on web fundamentals",
+  "license": "ISC",
+  "author": "@TheDunco",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind-build": "pnpm dlx @tailwindcss/cli -i ./src/tailwind-input.css -o ./public/output.css $1",
+    "tailwind-watch": "pnpm run tailwind-build --watch",
+    "dev": "bun app.js --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.2.4",
+    "tailwindcss": "4.2.4"
+  },
+  "dependencies": {
+    "body-parser": "2.2.2",
+    "bun": "1.3.13",
+    "express": "5.2.1"
+  }
+}

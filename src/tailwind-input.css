@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+*::selection {
+  @apply bg-amber-300/50;
+}
+
+* {
+  @apply text-pretty;
+}
+
+body {
+  @apply max-w-5xl mx-auto;
+}
+
+h1 {
+  @apply font-bold text-4xl leading-8 my-8;
+}
+
+h2 {
+  @apply font-bold text-3xl leading-7 my-6;
+}
+
+h3 {
+  @apply font-semibold text-2xl leading-6 my-4;
+}
+
+h3 {
+  @apply font-semibold text-xl leading-6 my-3;
+}
+
+a {
+  @apply lg:hover:bg-amber-400/50 p-1 py-px;
+}
+
+nav a {
+  @apply h-12 items-center flex;
+}
+
+ul {
+  @apply list-disc ps-5;
+}
+
+ul ul {
+  @apply list-[circle] ps-5;
+}
