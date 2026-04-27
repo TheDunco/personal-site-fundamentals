@@ -9,31 +9,39 @@
 }
 
 body {
-  @apply max-w-5xl mx-auto;
+  @apply max-w-5xl mx-auto h-full min-h-screen flex flex-col;
 }
 
 h1 {
-  @apply font-bold text-4xl leading-8 my-8;
+  @apply font-bold text-4xl leading-8 my-10;
 }
 
 h2 {
-  @apply font-bold text-3xl leading-7 my-6;
+  @apply font-bold text-3xl leading-7 my-8;
 }
 
 h3 {
-  @apply font-semibold text-2xl leading-6 my-4;
+  @apply font-semibold text-2xl leading-6 my-6;
 }
 
 h3 {
-  @apply font-semibold text-xl leading-6 my-3;
+  @apply font-semibold text-xl leading-6 my-4;
+}
+
+h4 {
+  @apply font-semibold text-lg leading-5 my-4;
+}
+
+.ident {
+  @apply pl-5 border-l border-l-gray-300;
 }
 
 a {
-  @apply lg:hover:bg-amber-400/50 p-1 py-px;
+  @apply md:hover:bg-amber-400/50 py-1 underline;
 }
 
 nav a {
-  @apply h-12 items-center flex;
+  @apply h-12 items-center flex no-underline py-1 px-2;
 }
 
 ul {
