@@ -31,8 +31,6 @@
     --font-weight-bold: 700;
     --tracking-wider: 0.05em;
     --blur-md: 12px;
-    --blur-lg: 16px;
-    --blur-xl: 24px;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -195,6 +193,9 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
   .mt-auto {
     margin-top: auto;
   }
@@ -206,12 +207,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-screen {
-    width: 100vw;
-  }
-  .flex-grow {
-    flex-grow: 1;
   }
   .cursor-alias {
     cursor: alias;
@@ -238,20 +233,11 @@
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .ps-3 {
     padding-inline-start: calc(var(--spacing) * 3);
-  }
-  .ps-5 {
-    padding-inline-start: calc(var(--spacing) * 5);
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -270,6 +256,11 @@
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
 }
+@layer base {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
 *::selection {
   background-color: color-mix(in srgb, oklch(87.9% 0.169 91.605) 50%, transparent);
   @supports (color: color-mix(in lab, red, red)) {
@@ -282,10 +273,15 @@
 body {
   margin-inline: auto;
   display: flex;
+  width: 100%;
   height: 100%;
   min-height: 100vh;
   max-width: var(--container-5xl);
   flex-direction: column;
+}
+main {
+  flex-grow: 1;
+  padding-inline: calc(var(--spacing) * 5);
 }
 h1 {
   margin-block: calc(var(--spacing) * 10);
@@ -361,12 +357,20 @@ nav a {
   text-decoration-line: none;
 }
 ul {
+  display: flex;
   list-style-type: disc;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
   padding-inline-start: calc(var(--spacing) * 5);
 }
 ul ul {
   list-style-type: circle;
+  gap: calc(var(--spacing) * 1.5);
   padding-inline-start: calc(var(--spacing) * 5);
+}
+li {
+  --tw-leading: calc(var(--spacing) * 5);
+  line-height: calc(var(--spacing) * 5);
 }
 @property --tw-border-style {
   syntax: "*";

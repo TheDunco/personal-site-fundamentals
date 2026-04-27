@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer base {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
 *::selection {
   @apply bg-amber-300/50;
 }
@@ -9,7 +15,11 @@
 }
 
 body {
-  @apply max-w-5xl mx-auto h-full min-h-screen flex flex-col;
+  @apply max-w-5xl mx-auto size-full min-h-screen flex flex-col;
+}
+
+main {
+  @apply px-5 flex-grow;
 }
 
 h1 {
@@ -45,9 +55,13 @@ nav a {
 }
 
 ul {
-  @apply list-disc ps-5;
+  @apply list-disc ps-5 flex flex-col gap-1.5;
 }
 
 ul ul {
-  @apply list-[circle] ps-5;
+  @apply list-[circle] ps-5 gap-1.5;
+}
+
+li {
+  @apply leading-5;
 }

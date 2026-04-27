@@ -14,10 +14,17 @@ customElements.define('x-nav', NavComponent);
 
 class FooterComponent extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<footer class="text-sm text-gray-700 bg-white sticky bottom-0 py-2 mt-auto w-screen">
+        this.innerHTML = `<footer class="text-sm text-gray-700 bg-white sticky bottom-0 py-2 mt-auto w-full">
       &#169; Duncan Van Keulen ${new Date().getFullYear()}
     </footer>`
     }
 }
 customElements.define('x-footer', FooterComponent);
+
+class SectionDividerComponent extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<hr class="my-5" />`
+    }
+}
+customElements.define('x-section-divider', SectionDividerComponent);
 
