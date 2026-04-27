@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind-build": "pnpm dlx @tailwindcss/cli -i ./src/tailwind-input.css -o ./public/output.css $1",
     "tailwind-watch": "pnpm run tailwind-build --watch",
-    "dev": "bun app.js --watch"
+    "dev": "bun app.js --watch",
+    "start": "bun app.js"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.2.4",
