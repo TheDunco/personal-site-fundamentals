@@ -2,7 +2,7 @@
 
 class NavComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<nav class="w-full flex bg-white/10 backdrop-blur-md flex-row gap-2 border-b border-gray-500">
+    this.innerHTML = `<nav class="w-full flex bg-white flex-row gap-2 border-b border-gray-500">
       <a href="/">Home</a>
       <a href="/work">Work</a>
       <a href="/play">Play</a>
