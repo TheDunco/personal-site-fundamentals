@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  @apply px-5 flex-grow;
+  @apply px-5 flex-grow bg-amber-50/50;
 }
 
 h1 {

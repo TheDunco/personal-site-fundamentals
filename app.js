@@ -26,6 +26,15 @@ app.get("/play", function(req, res) {
     res.sendFile(path.join(__dirname, "public", "play.html"));
 });
 
+app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "public", "/blog/index.html"));
+});
+
+app.get("/blog/simplicity", function(req, res) {
+    res.sendFile(path.join(__dirname, "public", "/blog/simplicity.html"));
+});
+
+
 app.listen(port, function() {
     console.log("The server is running on http://localhost:" + port);
 });
