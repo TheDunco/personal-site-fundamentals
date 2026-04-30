@@ -10,7 +10,7 @@
     <x-nav></x-nav>
     <main class="flex flex-col gap-5">
       <h1>Simplicity</h1>
-      <small class="-mt-5 mb-5"
+      <small class="-mt-10"
         >Credit goes to John Amash for imparting me with these insights and
         metaphors.
       </small>
@@ -20,28 +20,32 @@
         <b>simplicity is key.</b>
       </p>
       <p>
-        Simplicity &mdash; in the software automation and solutions sense that
-        I'm referring to &mdash; is ironically complex to define and may seem
-        initially unintuitive, but here goes.
+        Simplicity &mdash; in the software solutions and automation sense
+        &mdash; is ironically complex to define and may seem initially
+        unintuitive, but here goes.
       </p>
+      <h3 class="blog">Definition</h3>
       <p>
         A simple solution refers to how digestible and understandable, or how
         low-concept a solution is: the lower the number of variables and unknown
         factors, the more simple the solution is. Conversely, a complex solution
         introduces variables and unknown outcomes to a system that can result in
-        errors and lost tribal knowledge long term. Programmers and solutions
-        architects often add variables and abstraction to make our lives easier.
-        This is generally good, but when the levels of abstraction lead to the
-        system flow being difficult to know and understand it becomes a problem.
-        A complex solution with many levels of abstraction obfuscating lower
-        level details will present itself as the easy path, but that doesn't
-        mean it's the best solution to implement in the long term; a simple
-        solution can appear sluggish and cumbersome, but is often better to
-        implement long term. That is, especially if the benefits of ease of
-        understanding and the ability to make changes quickly and without side
-        effects outweighs the added time and manual effort of maintaining the
-        simple solution.
+        errors and lost tribal knowledge long-term.
       </p>
+      <p>
+        Programmers and solutions architects often add variables and abstraction
+        to make our lives easier. This is generally good, but when the levels of
+        abstraction lead to the system flow being difficult to <i>know</i> and
+        understand, it can become a problem. A complex solution with many levels
+        of abstraction obfuscating lower level details will present itself as
+        the easy path, but that doesn't mean it's the best solution to implement
+        in the long term; a simple solution can appear sluggish and cumbersome,
+        but is often better to implement long term. That is, especially if the
+        benefits of ease of understanding and the ability to make changes
+        quickly and without side effects outweighs the added time and manual
+        effort of maintaining the simple solution.
+      </p>
+      <h3 class="blog">Simplicity vs Difficulty</h3>
       <p>
         <b>
           Simple solutions are usually hard work, and complex solutions are
@@ -51,11 +55,11 @@
         shovel is simple in concept, yet hard manual work. All you need is a
         shovel and elbow grease. It's easy to understand, the path to completion
         is linear, and there aren't many variables to juggle. Digging a deep
-        hole with complex construction equipment is much easier and less manual
-        work, but the process has many more variables and therefore much more
-        could go wrong. Transporting large machinery is difficult. Each machine
-        could fail in various different ways. A backhoe could get stuck in the
-        mud. You could accidentally rupture a gas or sewer line that you
+        hole with complex construction equipment is much easier with far less
+        manual work, but the process has many more variables and therefore much
+        more could go wrong. Transporting large machinery is difficult. Each
+        machine could fail in various different ways. A backhoe could get stuck
+        in the mud. You could accidentally rupture a gas or sewer line that you
         wouldn't have if you were using a shovel.
       </p>
       <p>
@@ -64,26 +68,46 @@
         the answer. Each automated solution should be a cost-benefit analysis,
         weighing the risks of adding more variables and outcomes to a system.
       </p>
+      <h3 class="blog">Productivity</h3>
       <p>
         The best and most extreme modern illustration of these added variables
         incurring complexity is AI, specifically Large Language Models (LLMs).
-        LLMs are build with millions of variables, and are therefore impossible
-        to understand fully by a human. This makes them incredibly complex, as
-        it's impossible to determine what the LLM will say in response to an
-        input. This is the fundamental problem that results in hallucinations
-        and the models saying things that the architects never intended. LLMs
+        LLMs are build with millions or billions of variables (the values of
+        which are determined by huge sets of underlying training data), and are
+        therefore impossible to understand fully by a human. This makes them
+        incredibly complex, as it's impossible to determine what the LLM will
+        say in response to an input. An input can lead to many responses, i.e.
+        LLMs are not functions in the mathematical sense. This is the
+        fundamental problem that results in hallucinations and the models saying
+        things that the engineers who made the model never intended. LLMs
         contain so much information in their training data and so many different
         variables that it's impossible for them to decipher the truth in their
-        responses.
+        own responses.
       </p>
       <p>
         The scariest thing is that LLMs make our lives so much easier because of
         this complexity. This is the source of my strong skepticism for AI. I
         don't want to put my trust in something that cannot be fully understood
-        by a human because it's so complex. Using an LLM for programming may
-        seem "productive" because you can produce so much more code, but because
-        code and automation incurs complexity, it may not be as productive for
-        the system as it seems.
+        by a human due to its complexity. Using an LLM for programming may seem
+        "productive" because you can produce so much more code, but because code
+        and automation incurs complexity, it may not be as productive for the
+        system as it seems. When you offload work to an LLM, the LLM won't tell
+        you that your assumptions are wrong, it'll try to explain around and
+        find solutions within those incorrect assumptions. It'll be your yes-man
+        while also gaslighting you; it'll let you manipulate yourself.
+      </p>
+      <p>
+        Too often computer scientists forget that we're scientists. I've fallen
+        victim to it myself. We build tools that help us abstract away the
+        science and the nitty-gritty. We focus on pushing code instead of actual
+        long-term productivity. We forget to test and prove out our underlying
+        assumptions, instead going with the first solution that works, even that
+        solution is built upon incorrect assumptions or introduces unnecessary
+        complexity.
+      </p>
+      <p>
+        Software and automation are <b>powerful</b> tools, but power always
+        needs to be used responsibly, with discernment, and only when needed.
       </p>
     </main>
     <x-footer></x-footer>

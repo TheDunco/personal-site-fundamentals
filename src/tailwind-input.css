@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  @apply px-5 flex-grow bg-amber-50/50;
+  @apply px-5 flex-grow bg-amber-50/50 pb-20;
 }
 
 h1 {
@@ -27,19 +27,31 @@ h1 {
 }
 
 h2 {
-  @apply font-bold text-3xl leading-7 my-8;
+  @apply font-bold text-3xl leading-7;
+}
+
+h2:not(.blog) {
+  @apply my-8;
 }
 
 h3 {
-  @apply font-semibold text-2xl leading-6 my-6;
+  @apply font-semibold text-2xl leading-6;
 }
 
-h3 {
-  @apply font-semibold text-xl leading-6 my-4;
+h3:not(.blog) {
+  @apply my-6;
+}
+
+h3.blog {
+  @apply mt-3;
 }
 
 h4 {
-  @apply font-semibold text-lg leading-5 my-4;
+  @apply font-semibold text-xl leading-6 my-4;
+}
+
+h5 {
+  @apply font-semibold text-lg leading-5 my-2;
 }
 
 .ident {
@@ -47,7 +59,11 @@ h4 {
 }
 
 a {
-  @apply md:hover:bg-amber-400/50 py-1 underline;
+  @apply md:hover:bg-amber-400/30 md:group-hover:bg-amber-400/50 py-1;
+}
+
+a:not(.blog):not(nav a) {
+  @apply underline;
 }
 
 nav a {
