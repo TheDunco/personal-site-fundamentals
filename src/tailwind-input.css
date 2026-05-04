@@ -47,7 +47,15 @@ h3.blog {
 }
 
 h4 {
-  @apply font-semibold text-xl leading-6 my-4;
+  @apply font-semibold text-xl leading-6;
+}
+
+h4.blog {
+  @appy mt-3;
+}
+
+h4:not(.blog) {
+ @apply my-4;
 }
 
 h5 {

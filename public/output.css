@@ -353,13 +353,15 @@ h3.blog {
   margin-top: calc(var(--spacing) * 3);
 }
 h4 {
-  margin-block: calc(var(--spacing) * 4);
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   --tw-leading: calc(var(--spacing) * 6);
   line-height: calc(var(--spacing) * 6);
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
+}
+h4:not(.blog) {
+  margin-block: calc(var(--spacing) * 4);
 }
 h5 {
   margin-block: calc(var(--spacing) * 2);
