@@ -14,7 +14,7 @@ customElements.define('x-nav', NavComponent);
 
 class FooterComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<footer class="text-sm text-gray-700 bg-amber-50 py-2 w-full">
+    this.innerHTML = `<footer class="text-sm pl-5 text-gray-700 bg-amber-50 py-2 w-full">
       &#169; Duncan Van Keulen ${new Date().getFullYear()}
     </footer>`
     this.classList = `${this.classList} sticky bottom-0`
