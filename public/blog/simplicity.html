@@ -19,24 +19,37 @@
         productivity:
         <b>simplicity is key.</b>
       </p>
+      <h3 class="blog">Definition</h3>
       <p>
         Simplicity &mdash; in the software solutions and automation sense
         &mdash; is ironically complex to define and may seem initially
-        unintuitive, but here goes.
+        unintuitive, however simplicity versus complexity, is an important truth
+        to understand.
       </p>
-      <h3 class="blog">Definition</h3>
       <p>
         A simple solution is digestible and understandable, or low-concept: the
-        lower the number of variables and unknown factors, the more simple the
-        solution is. Conversely, a complex solution introduces variables and
-        unknown outcomes to a system that can result in errors and lost tribal
-        knowledge long term.
+        lower the number of variables and unknown outcomes or behaviors of the
+        system, the more simple the solution is. Conversely, a complex solution
+        <i>introduces</i> variables and unknown outcomes to a system that can
+        result in errors, unknown side effects, and lost
+        <a
+          href="https://en.wikipedia.org/wiki/Tribal_knowledge"
+          class="cursor-alias"
+          target="_blank"
+          >tribal knowledge</a
+        >
+        long term.
       </p>
       <p>
         Programmers and solutions architects often add variables and layers of
-        abstraction to make managing our work easier. This is generally good,
-        but when the levels of abstraction lead to the system flow being
-        difficult to
+        <a
+          href="https://en.wikipedia.org/wiki/Abstraction_(computer_science)"
+          class="cursor-alias"
+          target="_blank"
+          >abstraction</a
+        >
+        to make managing our work easier. This is generally good, but when the
+        levels of abstraction lead to the system flow being difficult to
         <i>know</i> and understand, it can become a problem. A complex solution
         with many levels of abstraction obfuscating lower level details will
         present itself as the easy path because abstraction can hide complexity,
@@ -50,61 +63,67 @@
       <p>
         <b>
           Simple solutions are hard work, and complex solutions are complex to
-          ease that burden, but complexity comes with trade-offs.
+          ease that burden, but complexity comes with trade-offs and unknown
+          outcomes.
         </b>
         This is best explained using a metaphor: digging a deep hole with a
-        shovel is simple in concept, yet hard manual work. All you need is a
-        shovel and elbow grease. It's easy to understand, the path to completion
-        is linear, and there aren't many variables to juggle. Digging a deep
-        hole with complex construction equipment is much easier with far less
-        manual work, but the process has many more variables and therefore much
-        more could go wrong. Transporting large machinery is difficult. Each
-        machine could fail in various different ways. A backhoe could get stuck
-        in the mud. You could accidentally rupture a gas or sewer line that you
-        wouldn't have if you were using a shovel.
+        shovel is simple in concept, yet difficult and hard manual work. All you
+        need is a shovel and elbow grease. It's easy to understand, the path to
+        completion is linear, and there aren't many variables to juggle.
+        Conversely, digging a deep hole with heavy-duty construction equipment
+        is much easier with far less manual work, but the process has many more
+        variables and therefore much more could go wrong. Transporting large
+        machinery brings logistical challenges. Each machine could fail in
+        various different ways, whether that be hydraulic issues or getting
+        stuck in the mud. Using large equipment, you could accidentally rupture
+        a gas, water, or power line that you wouldn't have if you were using a
+        shovel.
       </p>
+      <h4 class="blog">Practical Example</h4>
       <p>
         <b>Automation is not always the answer</b> as it can lead to added
         complexity. That's not to say, however, that adding complexity is never
         the answer. Each automated solution should be a cost-benefit analysis,
         weighing the risks of adding more variables and outcomes to a system.
       </p>
-      <h4 class="blog">Practical Example</h4>
       <p>
         A client (customer, coworker, etc.) comes to you with a problem: they
         find it time consuming and draining to wade through social media
         comments to find out what user impressions of new products are. A
         software developer's first instinct is to say "how can I solve this
-        problem for them using automation?" You instantly start thinking of
+        problem for them using automation?" We instantly start thinking of
         complex automated solutions: "I could build a web scraper that scans
-        multiple different social media platforms, feeds that data into an LLM
+        multiple different social media platforms, feeds that data into an AI
         that we train on social media impressions data, and spits out a response
-        based on the impressions it finds!" That's all well and good, and it
-        makes the client's life easier, but it introduces an exorbitantly
+        based on the impressions it finds!" That sounds all well and good, and
+        it makes the client's life easier, but it introduces an exorbitantly
         complex system to do so while abstracting away a large portion of their
-        job. It would drain so many resources to develop the system, train the
-        model, and maintain the system, that it's probably better to retort and
-        tell them to continue with the simple solution of looking through social
-        media feeds themselves. There's probably a larger problem underneath the
+        job to an unpredictable system. It would drain so many resources to
+        develop the system, train the model, and maintain the system that it's
+        probably better to retort and tell the client to continue with the
+        simple solution of looking through social media feeds themselves, even
+        if they have to block out more time on their calendar for it. If they're
+        truly overwhelmed, there's probably a larger problem underneath the
         surface resulting in this person's plate being too full such that they
         don't feel like they have time or resources to do their job properly.
-        Maybe the better solution is to hire more <b>real people</b> to split
-        the task load instead of replacing the employee with AI.
+        Maybe the better solution for the company is to hire more
+        <b>real people</b> to split the task load instead of replacing the
+        employee with AI.
       </p>
       <h4 class="blog">Illustration: LLMs are Complex</h4>
       <p>
-        The most extreme modern illustration of these added variables incurring
+        The most extreme modern illustration of added variables incurring
         complexity is AI, specifically Large Language Models (LLMs). LLMs are
         build with millions or billions of variables (the values of which are
         determined by huge sets of underlying training data), and are therefore
         impossible to understand fully by a human. This makes them incredibly
-        complex, as it's impossible to determine what the LLM will say in
-        response to an input. An input can lead to many responses, i.e. LLMs are
-        not functions in the mathematical sense. This is the fundamental problem
-        that results in hallucinations and the models saying things that the
+        complex, as it's impossible to determine what the LLM will say (really,
+        predict) in response to an input. This is the fundamental problem that
+        results in hallucinations and the models saying things that the
         engineers who made the model never intended. LLMs contain so much
-        information in their training data and so many different variables that
-        it's impossible for them to decipher the truth in their own responses.
+        baked-in information from their training data contained within their
+        neural network of variables that it's impossible for them to decipher
+        truth in their own responses.
       </p>
       <p>
         The scariest thing is that LLMs make our lives so much easier because of
@@ -116,7 +135,8 @@
         system as it seems. When you offload work to an LLM, the LLM won't tell
         you that your assumptions are wrong, it'll try to explain around and
         find solutions within those incorrect assumptions. AI will be your
-        yes-man while also gaslighting you; it'll let you manipulate yourself.
+        yes-man while also gaslighting you; it'll let you manipulate yourself
+        into implementing a less-than-ideal solution.
       </p>
       <h3 class="blog">Productivity and Agility</h3>
       <p>
@@ -133,10 +153,10 @@
         communicate. Each node can connect to various other nodes, so each added
         node can explode the number of connections (variables). You can be much
         more confident making a change to a node or a variable in a system when
-        there's 3 nodes rather than if there's a hundred because it doesn't take
+        there's three nodes rather than if there's 100 because it doesn't take
         much time or effort to know and understand the whole system when the
         amount of variables is low. Having to context-load and unravel the
-        tangled web of an complex existing automated system is time intensive,
+        tangled web of a complex existing automated system is time intensive,
         resource intensive, and stressful for the person making the changes.
         <b>
           As a simple ;) rule of thumb, only automate the things that are taking
@@ -151,10 +171,10 @@
         that help us abstract away the nitty-gritty that sometimes is better to
         leave bare. We have the magical power of software and logic at our
         fingertips. We lie in wait like ambush predators, ready and eager to use
-        our skills to squash problems. The result is that we focus on pushing
-        code instead of actual long-term productivity for the client or company
-        we're working for. We develop and construct beautiful software solutions
-        even when they introduce unnecessary complexity.
+        our skills to attack problems and build solutions. The result is that we
+        focus on pushing code instead of actual long-term productivity for the
+        client or company we're working for. We develop and construct beautiful
+        software solutions even when they introduce unnecessary complexity.
       </p>
       <p>
         Software and automation are <b>powerful</b> tools, but power always
