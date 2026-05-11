@@ -10,6 +10,10 @@
   @apply bg-amber-300/50;
 }
 
+p {
+  @apply text-lg;
+}
+
 * {
   @apply text-pretty;
 }
@@ -23,7 +27,7 @@ main {
 }
 
 h1 {
-  @apply font-bold text-4xl leading-8 my-10;
+  @apply font-bold text-4xl leading-8 mt-10 mb-8;
 }
 
 h2 {
@@ -31,7 +35,7 @@ h2 {
 }
 
 h2:not(.blog) {
-  @apply my-8;
+  @apply mt-8 mb-6;
 }
 
 h3 {
@@ -39,11 +43,11 @@ h3 {
 }
 
 h3:not(.blog) {
-  @apply my-6;
+  @apply mt-6 mb-4;
 }
 
 h3.blog {
-  @apply mt-3;
+  @apply mt-4 mb-2;
 }
 
 h4 {
@@ -55,11 +59,11 @@ h4.blog {
 }
 
 h4:not(.blog) {
- @apply my-4;
+  @apply mt-4 mb-2;
 }
 
 h5 {
-  @apply font-semibold text-lg leading-5 my-2;
+  @apply font-semibold text-lg leading-5 mt-2 mb-1;
 }
 
 .ident {

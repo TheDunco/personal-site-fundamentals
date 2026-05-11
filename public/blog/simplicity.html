@@ -8,12 +8,9 @@
   </head>
   <body>
     <x-nav></x-nav>
-    <main class="flex flex-col gap-5">
+    <main class="flex flex-col gap-3">
       <h1>Simplicity</h1>
-      <small class="-mt-10"
-        >Credit goes to John Amash for imparting me with these insights and
-        metaphors.
-      </small>
+
       <p>
         Complexity in software or automation systems is the death of
         productivity:
@@ -22,16 +19,14 @@
       <h3 class="blog">Definition</h3>
       <p>
         Simplicity &mdash; in the software solutions and automation sense
-        &mdash; is ironically complex to define and may seem initially
-        unintuitive, however simplicity versus complexity, is an important truth
-        to understand.
+        &mdash; is important to understand and distinguish from complexity.
       </p>
       <p>
         A simple solution is digestible and understandable, or low-concept: the
         lower the number of variables and unknown outcomes or behaviors of the
         system, the more simple the solution is. Conversely, a complex solution
-        <i>introduces</i> variables and unknown outcomes to a system that can
-        result in errors, unknown side effects, and lost
+        introduces variables and unknown outcomes to a system that can result in
+        errors, unknown side effects, and lost
         <a
           href="https://en.wikipedia.org/wiki/Tribal_knowledge"
           class="cursor-alias"
@@ -79,13 +74,15 @@
         a gas, water, or power line that you wouldn't have if you were using a
         shovel.
       </p>
-      <h4 class="blog">Practical Example</h4>
       <p>
         <b>Automation is not always the answer</b> as it can lead to added
         complexity. That's not to say, however, that adding complexity is never
         the answer. Each automated solution should be a cost-benefit analysis,
-        weighing the risks of adding more variables and outcomes to a system.
+        weighing the risks of adding more variables and outcomes to a system
+        versus the time savings and reduced level of error from manual
+        solutions.
       </p>
+      <h4 class="blog">Practical Example</h4>
       <p>
         A client (customer, coworker, etc.) comes to you with a problem: they
         find it time consuming and draining to wade through social media
@@ -95,18 +92,18 @@
         complex automated solutions: "I could build a web scraper that scans
         multiple different social media platforms, feeds that data into an AI
         that we train on social media impressions data, and spits out a response
-        based on the impressions it finds!" That sounds all well and good, and
+        based on the impressions it finds." That sounds all well and good, and
         it makes the client's life easier, but it introduces an exorbitantly
-        complex system to do so while abstracting away a large portion of their
-        job to an unpredictable system. It would drain so many resources to
-        develop the system, train the model, and maintain the system that it's
-        probably better to retort and tell the client to continue with the
-        simple solution of looking through social media feeds themselves, even
-        if they have to block out more time on their calendar for it. If they're
-        truly overwhelmed, there's probably a larger problem underneath the
-        surface resulting in this person's plate being too full such that they
-        don't feel like they have time or resources to do their job properly.
-        Maybe the better solution for the company is to hire more
+        complex system to do so while abstracting away a large portion of the
+        client's job to an unpredictable system. It would drain resources to
+        develop the system, train the model, and maintain the system. In this
+        case, it's probably better to retort and tell the client to continue
+        with the simple solution of looking through social media feeds
+        themselves, even if they have to block out more time on their calendar
+        for it. If they're truly overwhelmed, there's probably a larger problem
+        underneath the surface resulting in this person's plate being too full
+        such that they don't feel like they have time or resources to do their
+        job properly. Maybe the better solution for the company is to hire more
         <b>real people</b> to split the task load instead of replacing the
         employee with AI.
       </p>
@@ -137,6 +134,19 @@
         find solutions within those incorrect assumptions. AI will be your
         yes-man while also gaslighting you; it'll let you manipulate yourself
         into implementing a less-than-ideal solution.
+      </p>
+      <p>
+        Don't get me wrong: I'm not saying that LLMs are not useful nor
+        powerful. LLMs act as fantastic search engines and problem solvers for
+        specific and testable criteria. I use LLMs as a resource nearly daily in
+        my work, but instead of prompting "code this app for me" and letting it
+        run its course, I'm asking "give me a couple ways I could implement this
+        layout in HTML" so I can parse through them myself and see which one is
+        best for my use-case. Or, "do some research and link me to the best
+        resources for x/y/z," or "give me some ideas of how to perform this
+        operation more efficiently (<code
+          >pasted code function that I wrote</code
+        >)."
       </p>
       <h3 class="blog">Productivity and Agility</h3>
       <p>
@@ -180,6 +190,11 @@
         Software and automation are <b>powerful</b> tools, but power always
         needs to be used responsibly, with discernment, and only when needed.
       </p>
+      <small class="text-sm">
+        Credit to John Amash and my experience at
+        <a href="/work#tekton">TEKTON</a> for imparting me with these insights
+        and metaphors.
+      </small>
     </main>
     <x-footer></x-footer>
   </body>
